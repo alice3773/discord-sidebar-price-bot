@@ -1,2 +1,4 @@
 
 crypto_cache.json
+.env
+crypto_config.yaml

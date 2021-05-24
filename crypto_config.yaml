@@ -1,11 +1,11 @@
-# BTC:
-#     priceUnit:
-#         - USD
-#     decimalPlace:
-#         - 0
-#     updateFreq: 60
-#     discordBotKey: <Unique Discord Bot Key>
-#     guildId: <Guild ID>
+BTC:
+    priceUnit:
+        - USD
+    decimalPlace:
+        - 2
+    updateFreq: 60
+    discordBotKey: ODQ2MjgwNTY2NDg3Nzc3Mjkx.YKtOMg.QrsaFQ0OCXPJV6VaAnBLQDVWdVg
+    guildId: 846280566487777291
 
 ETH:
     priceUnit:
@@ -13,8 +13,8 @@ ETH:
     decimalPlace:
         - 2
     updateFreq: 60
-    discordBotKey: 
-    guildId: 
+    discordBotKey: ODQ2MjgwMDUzMjA5ODI1MzAw.YKtNtw.IZxcDDiQG69AkMWnv5HWrsbHMus
+    guildId: 846280053209825300
 
 CONV:
     priceUnit:
@@ -22,8 +22,8 @@ CONV:
     decimalPlace:
         - 2
     updateFreq: 60
-    discordBotKey: 
-    guildId: 
+    discordBotKey: ODQ2MjA3Mjg0MTE5ODYzMzE2.YKsJ8g.GcbtyjEEGvYC3drQMo7-Rkwfvqc
+    guildId: 846207284119863316
 
 # YFI:
 #     priceUnit:
@@ -33,6 +33,6 @@ CONV:
 #         - 0
 #         - 2
 #     updateFreq: 120
-#     discordBotKey: <Unique Discord Bot Key>
-#     guildId: <Guild ID>
+#     discordBotKey: ODQ2NDI0MjcxMzMxOTE3ODg0.YKvUCA.Q1mKYw7PwpAi-SeZoIA2CLN6KBk
+#     guildId: 846424271331917884
 

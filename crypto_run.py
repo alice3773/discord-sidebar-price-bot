@@ -91,6 +91,7 @@ def main(ticker: str,
     client = discord.Client()
     numUnit = len(config['priceUnit'])
 
+    
     async def send_update(priceList, unit, numDecimalPlace=None):
         if numDecimalPlace == 0:
             numDecimalPlace = None # round(2.3, 0) -> 2.0 but we don't want ".0"
@@ -101,7 +102,11 @@ def main(ticker: str,
 
         nickname = f'{ticker.upper()} {get_currencySymbol(unit)}{price_now}'
         status = f'{get_currencySymbol(unit)} 24h: {pct_change:.2f}%'
-        await client.get_guild(config['guildId']).me.edit(nick=nickname)
+        guild = client.get_guild(config['guildId'])
+        me = guild.me
+        await me.edit(nick = nickname)
+        # await client.get_guild(config['guildId']).me.edit(nick=nickname)
+        # await client.get_guild(config['guildId'])
         await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching,
                                                                 name=status))
         await asyncio.sleep(config['updateFreq'] / numUnit) # in seconds
