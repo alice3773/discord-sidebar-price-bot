@@ -5,15 +5,15 @@ Run a Discord sidebar bot that shows price of a cryptocurrency
 # python3 crypto_run.py -t BTC &
 
 def get_currencySymbol(currTicker: str) -> str:
-    """
-    Get currency symbol
-    """
+    # Get currency symbol
     if currTicker.upper() == 'USD':
         return '$'
     elif currTicker.upper() == 'BTC':
         return '₿'
     elif currTicker.upper() == 'ETH':
         return 'Ξ'
+    elif currTicker.upper() == 'CONV':
+        return 'C'
     else:
         raise NotImplementedError('Invalid currency symbol')
 
@@ -103,8 +103,9 @@ def main(ticker: str,
         status = f'{get_currencySymbol(unit)} 24h: {pct_change:.2f}%'
         await client.get_guild(config['guildId']).me.edit(nick=nickname)
         await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching,
-                                                               name=status))
+                                                                name=status))
         await asyncio.sleep(config['updateFreq'] / numUnit) # in seconds
+
 
     @client.event
     async def on_ready():
