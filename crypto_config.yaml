@@ -13,7 +13,7 @@ ETH:
     decimalPlace:
         - 2
     updateFreq: 60
-    discordBotKey: ODQ2MjgwMDUzMjA5ODI1MzAw.YKtNtw.ksE3cyCKcP1oP1Y9IF1ZYFhoAWo
+    discordBotKey: 
     guildId: 846280053209825300
 
 CONV:
@@ -22,7 +22,7 @@ CONV:
     decimalPlace:
         - 2
     updateFreq: 60
-    discordBotKey: ODQ2MjA3Mjg0MTE5ODYzMzE2.YKsJ8g.Qs8C4iR9TTGxQv6Fwg6zPnZLKYY
+    discordBotKey: 
     guildId: 846207284119863316
 
 # YFI:
